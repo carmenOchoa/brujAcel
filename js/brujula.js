@@ -1,6 +1,6 @@
 var br = {
+    watchID: null,
   iniciar: function(){
-      alert();
         if(!br.watchID){            
             var options = {frequency : 500 };
             br.watchID = navigator.compass.watchHeading(br.verDatos, br.error, options);
