@@ -1,9 +1,7 @@
 var ac = {
     watchID: null,
     iniciar: function(){
-        alert();
-        if(!ac.watchID){
-            
+        if(!ac.watchID){            
             var options = {frequency : 500 };
             ac.watchID = navigator.accelerometer.watchAcceleration(ac.verDatos, ac.error, options);
         }
@@ -12,7 +10,7 @@ var ac = {
         if(ac.watchID != null){
             navigator.accelerometer.clearWatch(ac.watchID);
             ac.watchID = null;
-            $('#acelerometro h2'.html('DETENIDO'));
+            $('#acelerometro h2').html('DETENIDO');
         }
     },
     error: function(){
