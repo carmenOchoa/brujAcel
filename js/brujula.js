@@ -1,7 +1,8 @@
 var br = {
     watchID: null,
-  iniciar: function(){
-        if(!br.watchID){            
+    iniciar: function(){
+        if(!br.watchID){    
+            alert();
             var options = {frequency : 500 };
             br.watchID = navigator.compass.watchHeading(br.verDatos, br.error, options);
         }
