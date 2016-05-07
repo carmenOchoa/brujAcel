@@ -1,9 +1,10 @@
 var ac = {
     watchID: null,
     iniciar: function(){
+        alert();
         if(!ac.watchID){
-            alert();
-            var options = {frequency = 500 };
+            
+            var options = {frequency : 500 };
             ac.watchID = navigator.accelerometer.watchAcceleration(ac.verDatos, ac.error, options);
         }
     },
