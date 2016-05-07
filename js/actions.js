@@ -14,4 +14,4 @@ var fn = {
         $('#brujula .individual li').eq(1).tap(br.detener);
     }
 };
-$(fn.ready);
+$(fn.init);
