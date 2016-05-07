@@ -16,5 +16,5 @@ var ac = {
     },
     verDatos: function(a){
         $('#acelerometro h2').html('x: ' + a.x + '<br>' + 'y: ' + a.y + '<br>' + 'z: ' + a.z );
-    }
+    }//
 };
