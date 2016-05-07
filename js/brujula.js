@@ -18,6 +18,6 @@ var br = {
         alert(err.code);
     },
     verDatos: function(a){
-        $('#brujula h2').html('Heading: ' + heading.magneticHeading );
+        $('#brujula h2').html('Heading: ' + a.magneticHeading );
     }  
 };
