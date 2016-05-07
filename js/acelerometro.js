@@ -7,7 +7,7 @@ var ac = {
         }
     },
     detener: function(){
-        if(ac.watchID){
+        if(ac.watchID != null){
             navigator.accelerometer.clearWatch(ac.watchID);
         }
     },
